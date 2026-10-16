@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+{{gtm_head}}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+{{head_meta}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  {{preload}}
+  <link rel="stylesheet" href="/css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-{{slug}}">
+{{gtm_body}}
+
+{{> icons}}
+
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <ul class="tb-info">
+      <li><a href="{{wa}}" target="_blank" rel="noopener" data-track="whatsapp_topbar"><svg><use href="#i-phone"/></svg> {{whatsapp}}</a></li>
+      <li><svg><use href="#i-pin"/></svg> Paulínia/SP</li>
+      <li><a href="mailto:{{email}}"><svg><use href="#i-mail"/></svg> {{email}}</a></li>
+    </ul>
+    <ul class="tb-right">
+      <li><svg><use href="#i-clock"/></svg> {{horario}}</li>
+      <li><a href="{{facebook}}" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="site-header" id="topo">
+  <div class="container bar">
+    <a class="logo" href="/" aria-label="Marmoraria Forte Rocha — página inicial">
+      <img src="/assets/logos/logo-forterocha.png" alt="Marmoraria Forte Rocha" width="326" height="46">
+    </a>
+    <nav class="main-nav" id="menu" aria-label="Navegação principal">
+        {{nav}}
+    </nav>
+    <a class="btn btn-brown btn-sm nav-cta" href="{{wa}}" target="_blank" rel="noopener" data-track="whatsapp_header">Fale agora</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+{{content}}
+</main>
+
+<footer class="site-footer">
+  <div class="container ft-grid">
+    <div class="ft-about">
+      <img class="ft-mono" src="/assets/logos/monograma.png" alt="Marmoraria Forte Rocha" width="84" height="81" loading="lazy">
+      <p>Diversas opções em mármores e granitos para obras residenciais e comerciais, produtos de alta qualidade.</p>
+      <div class="ft-social">
+        <a href="{{facebook}}" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+        <a href="{{wa}}" target="_blank" rel="noopener" aria-label="WhatsApp" data-track="whatsapp_footer_icon"><svg><use href="#i-wa"/></svg></a>
+        <a href="mailto:{{email}}" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <ul class="ft-contact">
+        <li><svg><use href="#i-pin"/></svg><span>{{endereco}}</span></li>
+        <li><svg><use href="#i-wa"/></svg><a href="{{wa}}" target="_blank" rel="noopener" data-track="whatsapp_footer">{{whatsapp}}</a></li>
+        <li><svg><use href="#i-mail"/></svg><a href="mailto:{{email}}">{{email_wbr}}</a></li>
+        <li><svg><use href="#i-clock"/></svg><span>{{horario}}</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Navegação</h3>
+      <ul class="ft-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/empresa/">Empresa</a></li>
+        <li><a href="/servicos/">Serviços</a></li>
+        <li><a href="/obras/">Obras Realizadas</a></li>
+        <li><a href="/produtos/">Produtos</a></li>
+        <li><a href="/dicas/">Dicas</a></li>
+        <li><a href="/contato/">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Fanpage</h3>
+      <p>Siga-nos e confira as novidades!</p>
+      <a class="fb-card" href="{{facebook}}" target="_blank" rel="noopener">
+        <img src="/assets/logos/monograma.png" alt="" width="84" height="81" loading="lazy">
+        <span><b>Marmoraria Forte Rocha</b><small><svg><use href="#i-fb"/></svg> Seguir página</small></span>
+      </a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div class="container ft-bottom-inner">
+      <span>Marmoraria Forte Rocha © <span id="ano">2026</span> · Todos os direitos reservados.</span>
+      <a class="dev-credit" href="https://qh4.com.br/" target="_blank" rel="noopener" aria-label="Site desenvolvido por QH4 Growth">
+        <span>Desenvolvido por</span>
+        <span class="qh4-dots" aria-hidden="true"><i class="o"></i><i class="p"></i><i class="c"></i></span>
+        <b>QH<span>4</span> Growth</b>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<a class="go-up" href="#topo" aria-label="Voltar ao topo"><svg><use href="#i-arrow-up"/></svg></a>
+
+<dialog class="lightbox" id="lightbox" aria-label="Visualizar imagem">
+  <button class="lb-close" type="button" aria-label="Fechar" data-close><svg><use href="#i-close"/></svg></button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Anterior"><svg><use href="#i-chev"/></svg></button>
+  <figure class="lb-figure">
+    <img id="lb-img" alt="">
+    <figcaption><span id="lb-cap"></span><span id="lb-count"></span></figcaption>
+    <div class="lb-extra" id="lb-extra"></div>
+  </figure>
+  <button class="lb-nav lb-next" type="button" aria-label="Próxima"><svg><use href="#i-chev"/></svg></button>
+</dialog>
+
+<a class="wa-float" href="{{wa}}" target="_blank" rel="noopener" aria-label="Falar com a Forte Rocha no WhatsApp" data-track="whatsapp_float">
+  <span class="wa-tip">Envie-nos uma mensagem</span>
+  <svg><use href="#i-wa"/></svg>
+</a>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
