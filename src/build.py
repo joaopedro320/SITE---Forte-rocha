@@ -861,7 +861,9 @@ def redirect_page(to):
 <html lang="pt-BR"><head><meta charset="utf-8"><title>Redirecionando…</title>
 <meta name="robots" content="noindex"><link rel="canonical" href="{SITE}{to}">
 <meta http-equiv="refresh" content="0; url={to}"><script>location.replace({json.dumps(to)})</script></head>
-<body><a href="{to}">Continuar</a></body></html>
+<body><a href="{to}">Continuar</a>
+<script src="https://app-validacao-lp-sapp-validacao-lp.vercel.app/api/t" data-lp="site-forte-rocha" defer></script>
+</body></html>
 '''
 
 
