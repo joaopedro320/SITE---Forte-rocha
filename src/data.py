@@ -4,7 +4,7 @@ SITE = 'https://www.marmorariaforterocha.com.br'
 
 # Google Tag Manager — preencher com o ID do contêiner (ex.: 'GTM-ABC1234').
 # Vazio = o snippet não é inserido. GA4, Meta Pixel e Hotjar entram pelo GTM.
-GTM_ID = ''
+GTM_ID = 'GTM-TXHMTL2W'
 
 EMPRESA = {
     'nome': 'Marmoraria Forte Rocha',
