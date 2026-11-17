@@ -16,8 +16,8 @@ EMPRESA = {
     # TODO: conferir CEP e coordenada exata no Google Business Profile (hoje: centro de Paulínia)
     'cep': '',
     'lat': -22.7611, 'lng': -47.1544,
-    'whatsapp': '+55 19 99364-8081', 'whatsapp_digits': '5519993648081',
-    'telefone_br': '(19) 99364-8081',
+    'whatsapp': '+55 19 97117-6151', 'whatsapp_digits': '5519971176151',
+    'telefone_br': '(19) 97117-6151',
     'email': 'comercial@marmorariaforterocha.com.br',
     'facebook': 'https://www.facebook.com/marmorariaforterocharmc/',
     # TODO: confirmar dias de funcionamento (o site antigo informa só o horário 8h–17h)

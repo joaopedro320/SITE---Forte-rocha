@@ -188,7 +188,7 @@
       track('whatsapp_click', { local: 'formulario', pagina: location.pathname });
       track('generate_lead', { tipo: v('#f-tipo'), material: v('#f-mat') });
       msg.textContent = 'Abrindo o WhatsApp com a sua mensagem…';
-      window.open(`https://wa.me/5519993648081?text=${encodeURIComponent(linhas.join('\n'))}`, '_blank', 'noopener');
+      window.open(`https://wa.me/5519971176151?text=${encodeURIComponent(linhas.join('\n'))}`, '_blank', 'noopener');
     });
   }
 
